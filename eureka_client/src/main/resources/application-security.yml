@@ -1,0 +1,13 @@
+server:
+  port: 10010 # 服务端口号
+
+spring:
+  application:
+    name: eureka-client # eureka 客户端服务名称
+
+eureka:
+  client:
+    register-with-eureka: true # 注册到eureka的注册中心
+    fetch-registry: true # 获取注册列表实例
+    service-url:
+      defaultZone: http://root:root@localhost:10004/eureka/ # 配置注册中心地址
