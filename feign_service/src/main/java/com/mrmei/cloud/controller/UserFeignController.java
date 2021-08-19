@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import utils.CommonResult;
 
+import javax.annotation.Resource;
+
 /**
  * @Author mrmei
  * @create 2021/8/14 15:49
@@ -18,7 +20,7 @@ import utils.CommonResult;
 @RequestMapping("/user")
 public class UserFeignController {
 
-    @Autowired
+    @Resource
     private UserService userService;
 
     @PostMapping("/create")

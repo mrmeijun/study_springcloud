@@ -1,0 +1,17 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: feign-service
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:10000/eureka/
+
+feign:
+  circuitbreaker:
+    enabled: true
+
+
